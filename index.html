@@ -3,8 +3,12 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Advocacia Trabalhista em SP - Segurança e Precisão Técnica</title>
-<meta name="description" content="Pablo Ledesma, advogado trabalhista em SP, oferece consultoria, defesa estratégica e compliance trabalhista para empresas e funcionários. Atendimento rápido via WhatsApp ou formulário.">
+<title>Advocacia Trabalhista em SP - Segurança e precisão técnica</title>
+<meta name="description" content="Pablo Ledesma, advogado trabalhista em SP, oferece consultoria e defesa estratégica para empresas e funcionários. Atendimento rápido pelo WhatsApp ou formulário.">
+
+<!-- Fonte premium para o cabeçalho -->
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
 <style>
 :root{
   --primary:#0d2239;
@@ -29,7 +33,7 @@ header.scrolled{background:var(--primary-strong);padding:12px 28px;box-shadow:0 
 .brand-header{display:flex;align-items:center;gap:16px}
 .logo-header{height:96px;filter:drop-shadow(2px 2px 6px rgba(0,0,0,0.5));border-radius:8px;transition:height 0.3s ease}
 header.scrolled .logo-header{height:72px;}
-.brand-title h1{margin:0;font-size:1.55rem;color:var(--white);text-shadow:1px 1px 4px rgba(0,0,0,0.5)}
+.brand-title h1{margin:0;font-size:1.8rem;color:var(--white);font-family:'Merriweather', serif;text-shadow:1px 1px 4px rgba(0,0,0,0.5)}
 .nav{display:flex;gap:18px;align-items:center}
 .nav .btn-ghost{color:var(--white);font-weight:600;text-decoration:none;padding:8px 14px;border-radius:8px;transition:all 0.3s ease}
 .nav .btn-ghost:hover{opacity:0.9;transform:translateY(-2px)}
@@ -54,12 +58,10 @@ header.scrolled .logo-header{height:72px;}
 .split{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:start;max-width:1180px;margin:32px auto;padding:26px}
 .about p{color:var(--muted)}
 
-/* Lista com seta -->
- */
-.about ul{list-style:none;padding-left:0;margin-top:16px;}
-.about li{margin-bottom:12px;color:var(--muted);line-height:1.45;}
-.about li::before{content:"• ";color:var(--accent);font-weight:700;margin-right:6px;}
-.about li span{display:block;color:var(--muted);margin-left:12px;font-weight:400;}
+/* --- Bullet points com setas --- */
+ul.arrow-list{list-style:none;padding-left:0;margin-top:16px;color:var(--muted)}
+ul.arrow-list li{margin-bottom:12px}
+ul.arrow-list li::before{content:"\2192 ";color:var(--accent);font-weight:700}
 
 /* --- Footer --- */
 footer{margin-top:36px;background:linear-gradient(180deg,var(--primary),#0b324f);color:var(--white);padding:28px;text-align:center;border-radius:8px;max-width:1180px;margin-left:auto;margin-right:auto}
@@ -69,7 +71,7 @@ footer{margin-top:36px;background:linear-gradient(180deg,var(--primary),#0b324f)
 .btn-primary:hover{transform:translateY(-3px); box-shadow:0 12px 30px rgba(17,59,90,0.14)}
 .btn-secondary{display:inline-block;background:transparent;border:1px solid rgba(13,34,57,0.08);padding:12px 18px;border-radius:10px;color:var(--primary-strong);text-decoration:none;font-weight:600}
 
-/* --- WhatsApp Flutuante oficial --- */
+/* --- WhatsApp Flutuante Oficial --- */
 .whatsapp-float{position:fixed;right:18px;bottom:18px;z-index:9999;display:flex;gap:10px;align-items:center;animation:floatIn 1s ease both}
 .whatsapp-btn{background:transparent;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:none;transition:transform 0.3s ease}
 .whatsapp-btn img{width:100%;height:100%;object-fit:contain}
@@ -108,9 +110,9 @@ form input:focus,form textarea:focus{border-color:var(--accent);outline:none}
     </div>
   </div>
   <nav class="nav">
-    <a class="btn-ghost" href="#areas" title="Áreas de atuação de advocacia trabalhista em SP">Áreas</a>
-    <a class="btn-ghost" href="#sobre" title="Sobre Pablo Ledesma Advocacia">Sobre</a>
-    <a class="btn-ghost" href="#contato" title="Contato e orientação trabalhista">Contato</a>
+    <a class="btn-ghost" href="#areas">Áreas</a>
+    <a class="btn-ghost" href="#sobre">Sobre</a>
+    <a class="btn-ghost" href="#contato">Contato</a>
   </nav>
 </header>
 
@@ -119,7 +121,7 @@ form input:focus,form textarea:focus{border-color:var(--accent);outline:none}
 <section class="hero" role="region" aria-label="Introdução">
   <div class="hero-text">
     <h1>Advocacia Trabalhista em SP – Segurança e Precisão Técnica</h1>
-    <p>Sou Pablo Ledesma, advogado trabalhista em São Paulo, com 10 anos de experiência em consultoria, defesa estratégica e compliance trabalhista para empresas e funcionários. Atuo em rescisões, acordos, negociações e processos trabalhistas, sempre com foco em eficiência e resultado.</p>
+    <p>Sou Pablo Ledesma, advogado trabalhista em São Paulo, com 10 anos de experiência em consultoria e defesa estratégica para empresas e funcionários. Atuo em rescisões, acordos, negociações, compliance e processos trabalhistas, sempre com foco em eficiência e resultado.</p>
     <div class="hero-ctas">
       <a class="btn-primary" href="https://wa.me/5511949936195?text=Olá,%20Pablo!%20Gostaria%20de%20uma%20orientação%20trabalhista." target="_blank" rel="noopener noreferrer" aria-label="Falar agora com o advogado via WhatsApp">Falar agora com o advogado</a>
       <a class="btn-secondary" href="#contato">Agendar consulta</a>
@@ -148,12 +150,11 @@ form input:focus,form textarea:focus{border-color:var(--accent);outline:none}
 <section id="sobre" class="split" role="region" aria-label="Sobre">
 <div class="about">
 <h2>Por que me escolher</h2>
-<p class="muted">Divido minha experiência entre setor público e privado, permitindo avaliar riscos e oportunidades com visão estratégica rara no mercado. Trabalho com foco em mitigação de passivos, eficiência e orientações práticas.</p>
-<ul>
-<li><strong>Diagnóstico objetivo</strong> <span>Orientações claras desde o primeiro contato.</span></li>
-<li><strong>Atuação estratégica</strong> <span>Soluções que preservam resultado e tempo do cliente.</span></li>
-<li><strong>Transparência</strong> <span>Comunicação direta e planejamento de custos.</span></li>
-<li><strong>Experiência comprovada</strong> <span>10 anos atuando em casos complexos no setor público e privado.</span></li>
+<ul class="arrow-list">
+<li><strong>Diagnóstico objetivo</strong> --> Orientações claras desde o primeiro contato.</li>
+<li><strong>Atuação estratégica</strong> --> Soluções que preservam resultado e tempo do cliente.</li>
+<li><strong>Transparência</strong> --> Comunicação direta e planejamento de custos.</li>
+<li><strong>Experiência comprovada</strong> --> 10 anos atuando em casos complexos no setor público e privado.</li>
 </ul>
 </div>
 <aside aria-hidden="true">
@@ -188,7 +189,7 @@ form input:focus,form textarea:focus{border-color:var(--accent);outline:none}
 </div>
 </footer>
 
-<!-- WhatsApp oficial flutuante -->
+<!-- WhatsApp flutuante -->
 <div class="whatsapp-float" id="whatsappFloat" aria-hidden="false">
 <span class="whatsapp-label">Falar agora</span>
 <a class="whatsapp-btn" id="whatsappFloatBtn" href="https://wa.me/5511949936195?text=Olá,%20Pablo!%20Gostaria%20de%20uma%20orientação%20trabalhista." target="_blank" rel="noopener noreferrer" aria-label="Abrir chat com Pablo Ledesma no WhatsApp">
