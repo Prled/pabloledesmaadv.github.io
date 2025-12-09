@@ -196,12 +196,12 @@ form input:focus,form textarea:focus{border-color:var(--accent);outline:none}
   </div>
 </section>
 
-  <!-- Contato -->
-<section id="contato" class="section center" role="region" aria-label="Contato";text-align:center;">
+ <!-- Contato -->
+<section id="contato" class="section center" role="region" aria-label="Contato" style="text-align:center;">
 <h2>Precisa de orientação trabalhista agora?</h2>
 <p class="muted">Preencha o formulário ou fale diretamente pelo WhatsApp para receber atendimento imediato e personalizado.</p>
 
-<form id="contactForm" action="https://formspree.io/f/xgvglava" method="POST" style="max-width:480px;margin:24px auto;display:flex;flex-direction:column;gap:14px;">
+<form id="contactForm" action="https://formspree.io/f/xgvglava" method="POST" style="max-width:480px;margin:24px auto;display:flex;flex-direction:column;gap:14px;text-align:left;">
 <input type="hidden" name="_replyto" value="prled@outlook.com">
 <input type="text" name="nome" placeholder="Nome completo" required>
 <input type="email" name="email" placeholder="E-mail" required>
@@ -211,18 +211,26 @@ form input:focus,form textarea:focus{border-color:var(--accent);outline:none}
 <button type="submit" class="btn-primary">Enviar mensagem</button>
 </form>
 
- <p style="color:#6b6b6b;font-size:0.9rem;margin-top:6px;text-align:center;display:block;">
-  ✓ Seus dados são mantidos em sigilo. <br> 
-  ✓ Análise feita diretamente por advogado.
+<p style="color:#6b6b6b;font-size:0.9rem;margin-top:6px;text-align:center;display:block;">
+ ✓ Seus dados são mantidos em sigilo. <br> 
+ ✓ Análise feita diretamente por advogado.
 </p>
 
-<p class="muted" id="formSuccess" style="display:none;margin-top:12px;">Mensagem enviada com sucesso! <a id="continueWhatsapp" href="#" target="_blank" style="color:var(--accent);text-decoration:underline;">Clique aqui para continuar pelo WhatsApp</a>.</p>
+<p class="muted" id="formSuccess" style="display:none;margin-top:12px;text-align:center;">
+ Mensagem enviada com sucesso!
+ <a id="continueWhatsapp" href="#" target="_blank" style="color:var(--accent);text-decoration:underline;">
+  Clique aqui para continuar pelo WhatsApp
+ </a>.
+</p>
 </section>
 
 <footer>
 <div style="max-width:980px;margin:0 auto;text-align:center;display:block;">
 <p style="margin:0 0 6px 0;font-weight:600">© 2025 Pablo Ledesma Advocacia</p>
-<p style="margin:0;font-size:0.92rem" class="muted">Atendimento online e presencial • Email: <a href="mailto:prled@outlook.com" style="color:inherit;text-decoration:underline;">prled@outlook.com</a></p>
+<p style="margin:0;font-size:0.92rem" class="muted">
+ Atendimento online e presencial • Email:
+ <a href="mailto:prled@outlook.com" style="color:inherit;text-decoration:underline;">prled@outlook.com</a>
+</p>
 </div>
 </footer>
 
