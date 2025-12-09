@@ -288,5 +288,43 @@ if('scrollBehavior' in document.documentElement.style){
 }
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+    const form = document.getElementById("contactForm");
+    const success = document.getElementById("formSuccess");
+
+    if(!form) return;
+
+    form.addEventListener("submit", function(e){
+        e.preventDefault();
+
+        const data = new FormData(form);
+
+        fetch(form.action, {
+            method: "POST",
+            body: data,
+            headers: { "Accept": "application/json" }
+        })
+        .then(response => {
+            if(response.ok){
+                
+                // Reset do formulário
+                form.reset();
+
+                // Mostrar mensagem com animação
+                success.style.display = "block";
+                setTimeout(()=> success.style.opacity = "1", 50);
+                
+            } else {
+                alert("Erro ao enviar. Tente novamente.");
+            }
+        })
+        .catch(() => alert("Falha de conexão. Tente novamente mais tarde."));
+    });
+
+});
+</script>
+  
 </body>
 </html>
